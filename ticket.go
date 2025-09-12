@@ -1,0 +1,26 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+)
+
+type Ticket struct {
+	ID         int    `json:"ID"`
+	Title      string `json:"Title"`
+	StatusName string `json:"StatusName"`
+}
+
+func (c *Client) GetTicket(ticketID int) (*Ticket, error) {
+	path := fmt.Sprintf("/%d/tickets/%d", AppIDTickets, ticketID)
+	body, err := c.DoRequest("GET", path)
+	if err != nil {
+		return nil, err
+	}
+
+	var ticket Ticket
+	if err := json.Unmarshal(body, &ticket); err != nil {
+		return nil, err
+	}
+	return &ticket, nil
+}
