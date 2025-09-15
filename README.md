@@ -8,4 +8,5 @@ Right now, the program simply connects, gets your API key, and pulls data from a
 
 - [ ] Decide on a UI representation to render all the .json data to ([BubbleTea](https://github.com/charmbracelet/bubbletea) vs web UI?)
 - [ ] Complete the Ticket struct with all relevant fields from the API and add additional endpoints and calls
+- [ ] Move Ticket print statements from main.go and into the ticket functions
 - [ ] Implement article struct and calls for interfacing with the knowledge base

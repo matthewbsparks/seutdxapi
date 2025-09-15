@@ -7,6 +7,7 @@ import (
 )
 
 const (
+	AppIDAssets  = 98
 	AppIDTickets = 97
 	AppIDKBSC    = 96
 )

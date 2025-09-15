@@ -20,5 +20,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("Ticket: %d: %s (Status: %s)\n", ticket.ID, ticket.Title, ticket.StatusName)
+	fmt.Printf("Ticket: %d: %s (Status: %s) Description: %s\n", ticket.ID, ticket.Title, ticket.StatusName, ticket.Description)
 }

@@ -6,9 +6,10 @@ import (
 )
 
 type Ticket struct {
-	ID         int    `json:"ID"`
-	Title      string `json:"Title"`
-	StatusName string `json:"StatusName"`
+	ID          int    `json:"ID"`
+	Title       string `json:"Title"`
+	StatusName  string `json:"StatusName"`
+	Description string `json:"Description"`
 }
 
 func (c *Client) GetTicket(ticketID int) (*Ticket, error) {
