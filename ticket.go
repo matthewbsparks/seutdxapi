@@ -25,3 +25,7 @@ func (c *Client) GetTicket(ticketID int) (*Ticket, error) {
 	}
 	return &ticket, nil
 }
+
+func (t *Ticket) String() string {
+	return fmt.Sprintf("Ticket: %d: %s (Status: %s) Description: %s", t.ID, t.Title, t.StatusName, t.Description)
+}
