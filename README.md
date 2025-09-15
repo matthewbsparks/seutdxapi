@@ -9,20 +9,20 @@ Right now, the program simply connects, gets your API key, and pulls data from a
 - [ ] Decide on a UI representation to render all the .json data to ([BubbleTea](https://github.com/charmbracelet/bubbletea) vs web UI?)
 - [ ] Determine project structure for separating KB articles and SC services from each other
 - [ ] Create JSON marshaler functions to handle the JSON DateTime format
-- [ ] Update DoRequest function to deal with requests that need body
+- [ ] Update `DoRequest()` function to deal with requests that need body
 
 ## Tickets
 
 - [ ] Decide on remaining fields for ticket struct and add them
 - [ ] Create some ticket print functions inside ticket.go
-- [ ] Create first function for changing ticket `StatusName` via POST to test (turns out this must be done via StatusID!)
+- [ ] Create first function for changing ticket `StatusName` via POST to test (turns out this must be done via `StatusID`!)
 
 ## KB
 
 - [ ] Decide on relevant article fields and create article struct
-- [ ] Create first GetArticle function and associated early print functions
+- [ ] Create first `GetArticle()` function and associated early print functions
 
 ## Services
 
 - [ ] Decide on relevant service fields and create service struct
-- [ ] Create first GetService function and associated early print functions
+- [ ] Create first `GetService()` function and associated early print functions
